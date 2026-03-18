@@ -1,0 +1,1 @@
+// Role check helpers\nexport const isAdmin = (role) => role === 'admin'\nexport const isLecturer = (role) => role === 'lecturer'\nexport const isStudent = (role) => role === 'student'\nexport const canUpload = (role) => isLecturer(role) || isStudent(role)\n
