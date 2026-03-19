@@ -1,0 +1,32 @@
+type User @table {
+  email: String!
+  displayName: String!
+  userType: String!
+  createdAt: Timestamp!
+  photoUrl: String
+}
+
+type Category @table {
+  name: String!
+  createdAt: Timestamp!
+  description: String
+}
+
+type Document @table {
+  title: String!
+  fileUrl: String!
+  uploadDate: Timestamp!
+  status: String!
+  description: String
+  tags: [String]
+  uploader: User
+  category: Category
+}
+
+type ApprovalLog @table {
+  action: String!
+  actionDate: Timestamp!
+  notes: String
+  document: Document
+  admin: User
+}

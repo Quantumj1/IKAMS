@@ -2,6 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   // === INSTRUCTIONS ===
@@ -10,12 +11,13 @@ const firebaseConfig = {
   // 3. Register app (name: IMAKS), copy firebaseConfig object here:
   // 4. Authentication → Sign-in method → Enable Google (add authorized domains: localhost)
   // 5. Firestore Database → Create if needed
-  apiKey: "AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef123456"
+  apiKey: "AIzaSyC1cbvEssUccf5jq8ZSNZWthFtbqMyLJ1g",
+  authDomain: "ikams-647cc.firebaseapp.com",
+  projectId: "ikams-647cc",
+  storageBucket: "ikams-647cc.firebasestorage.app",
+  messagingSenderId: "455758407870",
+  appId: "1:455758407870:web:e1c55f7d36000c8fd556ef",
+  measurementId: "G-FQGF4Q9T18"
   // Paste your real config above, delete these placeholders
 };
 
@@ -25,5 +27,6 @@ export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const db = getFirestore(app);
 export const storage = getStorage(app);
+export const analytics = getAnalytics(app);
 
 export default app;
