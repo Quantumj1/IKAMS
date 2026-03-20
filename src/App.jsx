@@ -9,7 +9,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-gradient-to-br from-umat-blue to-umat-gold text-white">
+        <div className="min-h-screen bg-gradient-to-br from-umat-green to-umat-gold text-white">
           <header className="p-4 border-b border-white/20">
             <h1 className="text-3xl font-bold text-center">IMAKS - UMaT KMS</h1>
           </header>

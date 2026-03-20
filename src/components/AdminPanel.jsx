@@ -49,8 +49,8 @@ function AdminPanel() {
 
   if (pendingUploads.length === 0) {
     return (
-      <div className="p-8 bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/30 text-center">
-        <h3 className="text-2xl font-bold mb-4 text-umat-green">No Pending Uploads</h3>
+      <div className="p-8 bg-yellow/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-green/30 text-center">
+        <h3 className="text-2xl font-bold mb-4 text-umat-white">No Pending Uploads</h3>
         <p className="text-gray-600">All uploads approved or no new submissions.</p>
       </div>
     );

@@ -33,7 +33,7 @@ function Dashboard() {
   const dashboardTitle = role ? `${role.charAt(0).toUpperCase() + role.slice(1)} Dashboard` : 'IMAKS';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-umat-green/10 via-white to-umat-yellow/10 p-8">
+    <div className="min-h-screen bg-green-to-br from-umat-green/10 via-white to-umat-yellow/10 p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-umat-green to-umat-yellow mb-4">
@@ -53,7 +53,7 @@ function Dashboard() {
             const Component = componentsMap[compName];
             if (!Component) return null;
             return (
-              <div key={compName} className="bg-white/20 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/30">
+              <div key={compName} className="bg-green/20 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-yellow/30">
                 <Component onDownload={handleDownload} />
               </div>
             );

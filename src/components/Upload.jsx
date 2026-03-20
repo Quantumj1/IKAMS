@@ -99,19 +99,23 @@ function Upload() {
           type="file"
           accept=".pdf,.docx,.dwg"
           onChange={(e) => setFile(e.target.files[0])}
-          className="w-full p-4 rounded-xl border-2 border-dashed border-white/30 bg-white/10 text-white file:mr-4 file:py-3 file:px-6 file:rounded-xl file:border-0 file:bg-umat-yellow file:text-black hover:file:bg-umat-green file:font-bold file:shadow-lg hover:file:shadow-xl transition-all"
+          className="w-full p-4 rounded-xl border-2 border-dashed border-white/30 bg-white/10 text-white file:mr-4 file:py-3 
+          file:px-6 file:rounded-xl file:border-0 file:bg-umat-yellow file:text-black 
+          hover:file:bg-umat-green file:font-bold file:shadow-lg hover:file:shadow-xl transition-all"
           required
         />
         <button
           type="submit"
           disabled={uploading || !file}
-          className="w-full p-4 bg-gradient-to-r from-umat-yellow to-umat-green text-black font-bold rounded-2xl hover:from-umat-green hover:to-umat-yellow transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+          className="w-full p-4 bg-gradient-to-r from-umat-yellow to-umat-green text-black font-bold 
+          rounded-2xl hover:from-umat-green hover:to-umat-yellow transition-all shadow-xl hover:shadow-2xl 
+          hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed text-lg"
         >
           {uploading ? '📤 Uploading...' : '📤 Submit for Admin Approval'}
         </button>
       </form>
       
-      <div className="text-xs text-gray-400 text-center p-4 bg-white/5 rounded-xl">
+      <div className="text-xs text-gray-400 text-center p-4 bg-green/5 rounded-xl">
         <p>Files will be reviewed by admin before added to knowledge base.</p>
       </div>
     </div>

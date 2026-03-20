@@ -44,13 +44,13 @@ function Login() {
 
   return (
     <div className="flex min-h-screen items-center justify-center p-8">
-      <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
+      <div className="w-full max-w-md bg-green/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
         <h2 className="text-2xl font-bold mb-6 text-center">Login to IMAKS</h2>
         {error && <p className="text-red-400 mb-4 text-center">{error}</p>}
         <form onSubmit={handleLogin} className="space-y-4">
           <input
             type="email"
-            placeholder="UMaT Index/Staff ID @umat.edu.gh"
+            placeholder="UMaT Index/Staff ID @st.umat.edu.gh"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umat-gold"
