@@ -38,7 +38,8 @@ function Signup() {
     return null;
   }
 
-  const roles = ['student', 'lecturer', 'admin']; // Admin manual?
+  const roles = ['student', 'lecturer'];
+
 
   return (
     <div className="flex min-h-screen items-center justify-center p-8">

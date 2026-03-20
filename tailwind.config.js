@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         umat: {
-          gold: '#D4A70A',
+          green: '#10B981',
+          yellow: '#F59E0B', 
+          white: '#FFFFFF',
           blue: '#003087',
         }
       }
@@ -16,3 +18,4 @@ export default {
   },
   plugins: [],
 };
+

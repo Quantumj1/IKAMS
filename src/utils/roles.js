@@ -1,5 +1,5 @@
 export function canUpload(role) {
-  return role === 'student' || role === 'lecturer';
+  return role === 'lecturer';
 }
 
 export function isAdmin(role) {
@@ -8,9 +8,23 @@ export function isAdmin(role) {
 
 export function getRoleColor(role) {
   switch (role) {
-    case 'admin': return 'bg-red-500';
-    case 'lecturer': return 'bg-blue-500';
-    case 'student': return 'bg-green-500';
+    case 'admin': return 'bg-umat-yellow text-black';
+    case 'lecturer': return 'bg-umat-green text-white';
+    case 'student': return 'bg-umat-blue text-white';
     default: return 'bg-gray-500';
   }
 }
+
+// New dashboard components helpers
+export function getStudentComponents() {
+  return ['Search', 'FilesList'];
+}
+
+export function getLecturerComponents() {
+  return ['Upload', 'Search', 'FilesList'];
+}
+
+export function getAdminComponents() {
+  return ['AdminPanel', 'FilesList'];
+}
+
