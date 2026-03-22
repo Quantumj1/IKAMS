@@ -1,0 +1,42 @@
+<svg width="100%" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    
+  </defs>
+
+  <!-- Background pill card -->
+  <rect x="60" y="60" width="560" height="200" rx="24" stroke-width="1" stroke="#97C459" opacity="0.3" style="fill:rgb(245, 249, 239);stroke:rgb(151, 196, 89);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.3;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Emblem mark: double ring with leaf -->
+  <circle cx="168" cy="160" r="58" stroke-width="0" style="fill:rgb(234, 243, 222);stroke:none;color:rgb(0, 0, 0);stroke-width:0px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="168" cy="160" r="58" stroke-width="2.5" fill="none" style="fill:none;stroke:rgb(151, 196, 89);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="168" cy="160" r="46" stroke-width="1" fill="none" opacity="0.5" style="fill:none;stroke:rgb(151, 196, 89);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Open book shape inside emblem -->
+  <path d="M148 148 Q156 138 168 142 Q180 138 188 148 L188 176 Q180 172 168 175 Q156 172 148 176 Z" fill="#639922" opacity="0.85" style="fill:rgb(99, 153, 34);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="168" y1="142" x2="168" y2="175" stroke="#EAF3DE" stroke-width="1.5" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Page lines left -->
+  <line x1="153" y1="153" x2="165" y2="155" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="153" y1="159" x2="165" y2="161" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="153" y1="165" x2="165" y2="167" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Page lines right -->
+  <line x1="171" y1="155" x2="183" y2="153" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="171" y1="161" x2="183" y2="159" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="171" y1="167" x2="183" y2="165" stroke="#EAF3DE" stroke-width="1" stroke-linecap="round" opacity="0.7" style="fill:rgb(0, 0, 0);stroke:rgb(234, 243, 222);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Small leaf flourish top of emblem -->
+  <path d="M168 102 Q172 92 180 94 Q175 104 168 102 Z" fill="#639922" opacity="0.9" style="fill:rgb(99, 153, 34);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M168 102 Q164 92 156 94 Q161 104 168 102 Z" fill="#97C459" opacity="0.7" style="fill:rgb(151, 196, 89);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="168" y1="102" x2="168" y2="114" stroke="#639922" stroke-width="1" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(99, 153, 34);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Wordmark: IKAMS -->
+  <text x="248" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" letter-spacing="6" style="fill:rgb(23, 52, 4);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, &quot;Times New Roman&quot;, serif;font-size:62px;font-weight:700;text-anchor:start;dominant-baseline:auto">IKAMS</text>
+
+  <!-- Tagline -->
+  <text x="250" y="188" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" font-weight="400" style="fill:rgb(59, 109, 17);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Helvetica Neue&quot;, Arial, sans-serif;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">KNOWLEDGE &amp; MASTERY</text>
+
+  <!-- Thin decorative rule under tagline -->
+  <line x1="250" y1="200" x2="560" y2="200" stroke="#639922" stroke-width="0.5" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(99, 153, 34);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>
