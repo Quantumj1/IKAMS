@@ -49,9 +49,9 @@ function AdminPanel() {
 
   if (pendingUploads.length === 0) {
     return (
-      <div className="p-8 bg-yellow/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-green/30 text-center">
+      <div className="p-8 bg-yellow-100/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-emerald-400/30 text-center">
         <h3 className="text-2xl font-bold mb-4 text-umat-white">No Pending Uploads</h3>
-        <p className="text-gray-600">All uploads approved or no new submissions.</p>
+        <p className="text-green-600">All uploads approved or no new submissions.</p>
       </div>
     );
   }
@@ -69,9 +69,9 @@ function AdminPanel() {
                 <div>
                   <h4 className="text-xl font-bold text-white">{upload.title}</h4>
                   <p className="text-umat-yellow font-semibold">{upload.category}</p>
-                  <p className="text-sm text-gray-300">Dept: {upload.dept} | By: {upload.uploaderEmail}</p>
+                  <p className="text-sm text-green-300">Dept: {upload.dept} | By: {upload.uploaderEmail}</p>
                 </div>
-                <span className="text-sm bg-gray-700 px-3 py-1 rounded-full mt-2 md:mt-0">
+                <span className="text-sm bg-emerald-900 px-3 py-1 rounded-full mt-2 md:mt-0">
                   Uploaded {upload.createdAt?.toDate ? upload.createdAt.toDate().toLocaleDateString() : 'recently'}
                 </span>
               </div>
@@ -84,7 +84,7 @@ function AdminPanel() {
                 </button>
                 <button 
                   onClick={() => handleReject(upload)}
-                  className="flex-1 bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl"
+                  className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl"
                 >
                   ❌ Reject & Delete
                 </button>

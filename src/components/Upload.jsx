@@ -65,7 +65,7 @@ function Upload() {
       
       {uploadStatus && (
         <div className={`p-4 rounded-2xl text-center font-semibold ${
-          uploadStatus.includes('✅') ? 'bg-umat-green/20 text-umat-green border-umat-green/50' : 'bg-red-500/20 text-red-400 border-red-500/50'
+          uploadStatus.includes('✅') ? 'bg-umat-green/20 text-umat-green border-umat-green/50' : 'bg-orange-400/20 text-orange-400 border-orange-500/50'
         } border p-4 rounded-2xl`}>
           {uploadStatus}
         </div>
@@ -115,7 +115,7 @@ function Upload() {
         </button>
       </form>
       
-      <div className="text-xs text-gray-400 text-center p-4 bg-green/5 rounded-xl">
+      <div className="text-xs text-green-400 text-center p-4 bg-emerald-50 rounded-xl">
         <p>Files will be reviewed by admin before added to knowledge base.</p>
       </div>
     </div>

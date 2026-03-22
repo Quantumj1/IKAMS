@@ -45,7 +45,7 @@ function Signup() {
     <div className="flex min-h-screen items-center justify-center p-8">
       <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up for IMAKS</h2>
-        {error && <p className="text-red-400 mb-4 text-center">{error}</p>}
+        {error && <p className="text-orange-400 mb-4 text-center">{error}</p>}
         <form onSubmit={handleSignup} className="space-y-4">
           <input
             type="email"

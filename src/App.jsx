@@ -3,21 +3,20 @@ import { AuthProvider } from './contexts/AuthContext.jsx';
 import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import Welcome from './pages/Welcome.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-gradient-to-br from-umat-green to-umat-gold text-white">
-          <header className="p-4 border-b border-white/20">
-            <h1 className="text-3xl font-bold text-center">IMAKS - UMaT KMS</h1>
-          </header>
-          <main>
+        <div className="w-screen text-white">
+          <main className="[&>*]:min-h-screen">
             <Routes>
+              <Route path="/" element={<Welcome />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+              <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
             </Routes>
           </main>
         </div>
