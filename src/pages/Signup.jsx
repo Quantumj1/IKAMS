@@ -40,7 +40,6 @@ function Signup() {
 
   const roles = ['student', 'lecturer'];
 
-
   return (
     <div className="flex min-h-screen items-center justify-center p-8">
       <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
@@ -52,7 +51,7 @@ function Signup() {
             placeholder="UMaT Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umat-gold"
+            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umatGold"
             required
           />
           <input
@@ -60,27 +59,27 @@ function Signup() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umat-gold"
+            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umatGold"
             minLength={6}
             required
           />
           <select
             value={role}
             onChange={(e) => setRole(e.target.value)}
-            className="w-full p-3 bg-white/20 rounded-xl text-white border border-white/30 focus:ring-2 focus:ring-umat-gold"
+            className="w-full p-3 bg-white/20 rounded-xl text-white border border-white/30 focus:ring-2 focus:ring-umatGold"
           >
             {roles.map(r => <option key={r} value={r}>{r.charAt(0).toUpperCase() + r.slice(1)}</option>)}
           </select>
           <button
             type="submit"
             disabled={loading}
-            className="w-full p-3 bg-umat-gold text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50"
+            className="w-full p-3 bg-umatGold text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50"
           >
             {loading ? 'Creating Account...' : 'Sign Up'}
           </button>
         </form>
         <p className="mt-4 text-sm text-center text-white/70">
-          Already have account? <a href="/login" className="text-umat-gold hover:underline font-semibold">Login</a>
+          Already have account? <a href="/login" className="text-umatGold hover:underline font-semibold">Login</a>
         </p>
       </div>
     </div>
@@ -88,4 +87,3 @@ function Signup() {
 }
 
 export default Signup;
-

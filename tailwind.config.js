@@ -7,14 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        umat: {
-          green: '#10B981',
-          gold: '#D4A70A',
-          yellow: '#F59E0B',
-          light: '#6EE7B7',
-          white: '#FFFFFF',
-          error: '#F87171',  // muted for errors
-        }
+        umatGreen: '#10B981',
+        umatGold: '#D4A70A',
+        umatYellow: '#F59E0B',
+        umatLight: '#6EE7B7',
+        umatWhite: '#FFFFFF',
+        umatError: '#F87171',
       }
     },
   },

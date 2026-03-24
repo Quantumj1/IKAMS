@@ -14,8 +14,8 @@ function App() {
           <main className="[&>*]:min-h-screen">
             <Routes>
               <Route path="/" element={<Welcome />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path="/Signup" element={<Signup />} />
               <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
             </Routes>
           </main>

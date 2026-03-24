@@ -33,10 +33,10 @@ function Dashboard() {
   const dashboardTitle = role ? `${role.charAt(0).toUpperCase() + role.slice(1)} Dashboard` : 'IMAKS';
 
   return (
-    <div className="min-h-screen bg-green-to-br from-umat-green/10 via-white to-umat-yellow/10 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-umatGreen/10 via-white to-umatYellow/10 p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-umat-green to-umat-yellow mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-umatGreen to-umatYellow mb-4">
             IMAKS
           </h1>
           <h2 className="text-2xl font-bold text-green-800 mb-2">{dashboardTitle}</h2>
@@ -65,4 +65,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-

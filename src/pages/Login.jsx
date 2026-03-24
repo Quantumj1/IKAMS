@@ -53,7 +53,7 @@ function Login() {
             placeholder="UMaT Index/Staff ID @st.umat.edu.gh"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umat-gold"
+            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umatGold"
             required
           />
           <input
@@ -61,13 +61,13 @@ function Login() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umat-gold"
+            className="w-full p-3 bg-white/20 rounded-xl text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-umatGold"
             required
           />
           <button
             type="submit"
             disabled={loading}
-            className="w-full p-3 bg-umat-gold text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50"
+            className="w-full p-3 bg-umatGold text-black font-bold rounded-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50"
           >
             {loading ? 'Logging in...' : 'Email Login'}
           </button>
@@ -84,7 +84,7 @@ function Login() {
           </button>
         </form>
         <p className="mt-4 text-sm text-center text-white/70">
-          Don't have an account? <a href="/signup" className="text-umat-gold hover:underline font-semibold">Sign Up</a>
+          Don't have an account? <a href="/signup" className="text-umatGold hover:underline font-semibold">Sign Up</a>
         </p>
         <p className="text-sm text-center text-white/70">
           Demo: Use any email/password. Firebase config required for real auth.
