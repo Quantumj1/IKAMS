@@ -33,14 +33,14 @@ function Dashboard() {
   const dashboardTitle = role ? `${role.charAt(0).toUpperCase() + role.slice(1)} Dashboard` : 'IMAKS';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-umatGreen/10 via-white to-umatYellow/10 p-8">
+    <div className="flex min-h-screen items-center justify-center p-8 bg-gradient-to-br from-umatGreen to-emerald-900">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-umatGreen to-umatYellow mb-4">
             IMAKS
           </h1>
           <h2 className="text-2xl font-bold text-green-800 mb-2">{dashboardTitle}</h2>
-          <p className="text-lg text-green-600 max-w-2xl mx-auto">
+          <p className="text-lg text-umatYellow-600 max-w-2xl mx-auto">
             Welcome <span className="font-semibold">{user?.email}</span>
           </p>
           <div className={`inline-flex mt-4 px-6 py-2 rounded-full ${getRoleColor(role)}`}>

@@ -35,7 +35,7 @@ function Search() {
         {results.map((item) => (
           <div key={item.id} className="p-4 bg-white/5 rounded-lg flex justify-between items-center">
             <span>{item.title} ({item.dept})</span>
-            <button className="bg-umat-gold px-4 py-1 rounded text-black font-bold">Download</button>
+            <button className="bg-umat-gold px-4 py-1 rounded text-black font-bold" onClick={() => onDownload(item.storageUrl)}>Download</button>
           </div>
         ))}
       </div>
