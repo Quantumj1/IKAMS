@@ -1,5 +1,5 @@
 import { useAuth } from '../contexts/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function Welcome() {
@@ -8,7 +8,7 @@ function Welcome() {
 
   useEffect(() => {
     if (user) {
-      navigate('/');
+      navigate('/dashboard');
     }
   }, [user, navigate]);
 
@@ -34,12 +34,12 @@ function Welcome() {
             and advance UMaT's academic excellence.
           </p>
           <div className="flex flex-col lg:flex-row gap-8 justify-center items-center mb-20">
-            <a 
-              href="/Login" 
+            <Link 
+              to="/Login" 
               className="bg-gradient-to-r from-umatGold to-yellow-500 text-black font-black py-6 px-12 rounded-3xl text-xl hover:from-yellow-400 hover:to-umatGold hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-4xl transform hover:-translate-y-2"
             >
               🚀 Get Started
-            </a>
+            </Link>
             <a 
               href="/Signup" 
               className="border-4 border-white/30 bg-white/5 backdrop-blur-2xl text-white font-bold py-6 px-12 rounded-3xl text-xl hover:bg-white/20 hover:border-umatGold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl"
@@ -51,7 +51,7 @@ function Welcome() {
             <div className="text-center p-6">
               <div className="text-4xl mb-2">📚</div>
               <h3 className="text-xl font-bold mb-2 text-umatGold drop-shadow-lg">Knowledge Library</h3>
-              <p className="text-sm">Curated mining resources</p>
+              <p className="text-sm">Curated mining and tech resources</p>
             </div>
             <div className="text-center p-6">
               <div className="text-4xl mb-2">📤</div>
@@ -65,7 +65,7 @@ function Welcome() {
             </div>
           </div>
           <p className="mt-20 text-lg text-white/60 tracking-wide">
-            Demo Mode • Login with any credentials
+            Knowledge . Learning . Growth
           </p>
         </div>
       </div>

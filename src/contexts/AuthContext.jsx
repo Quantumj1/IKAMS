@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth, db } from '../lib/firebase';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, onSnapshot } from 'firebase/firestore';
 
 const AuthContext = createContext({});
 
@@ -19,27 +19,22 @@ export function AuthProvider({ children }) {
   const [role, setRole] = useState(null); // 'student' | 'lecturer' | 'admin'
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      setRole(null);
       if (firebaseUser) {
-        setUser(firebaseUser);
-        try {
-          const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
-          if (userDoc.exists()) {
-            setRole(userDoc.data().role);
-          } else {
-            setRole('student');
-          }
-        } catch (err) {
+        const userRef = doc(db, 'users', firebaseUser.uid);
+        const roleUnsub = onSnapshot(userRef, (doc) => {
+          setRole(doc.exists() ? doc.data().role : 'student');
+        }, (err) => {
           console.error('Error fetching user role:', err);
           setRole('student');
-        }
-      } else {
-        setUser(null);
-        setRole(null);
+        });
+        // Cleanup previous role listener
+        return roleUnsub;
       }
-      setLoading(false);
     });
-
+    setLoading(false);
     return unsubscribe;
   }, []);
 

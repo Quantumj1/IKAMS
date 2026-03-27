@@ -9,7 +9,7 @@ function ProtectedRoute({ children, requiredRole }) {
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/Login" replace />;
   }
 
   if (requiredRole && role !== requiredRole) {

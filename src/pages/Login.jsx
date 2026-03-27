@@ -43,8 +43,8 @@ function Login() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center p-8">
-      <div className="w-full max-w-md bg-green/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
+    <div className="flex min-h-screen items-center justify-center p-8 bg-gradient-to-br from-umatGreen to-emerald-900">
+      <div className="w-full max-w-md bg-green backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
         <h2 className="text-2xl font-bold mb-6 text-center">Login to IMAKS</h2>
         {error && <p className="text-orange-400 mb-4 text-center">{error}</p>}
         <form onSubmit={handleLogin} className="space-y-4">
@@ -87,7 +87,7 @@ function Login() {
           Don't have an account? <a href="/signup" className="text-umatGold hover:underline font-semibold">Sign Up</a>
         </p>
         <p className="text-sm text-center text-white/70">
-          Demo: Use any email/password. Firebase config required for real auth.
+          Knowledge . Learning . Growth
         </p>
       </div>
     </div>
